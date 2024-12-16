@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Pesquisa com Sugestões</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .search-container {
+      width: 300px;
+      position: relative;
+    }
+    #search-input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <label for="search-input">Digite para pesquisar:</label>
+    <input 
+      type="text" 
+      id="search-input" 
+      list="suggestions" 
+      placeholder="Digite algo..." 
+    />
+    <datalist id="suggestions">
+      <option value="Hambúrguer"></option>
+      <option value="Batata Frita"></option>
+      <option value="Refrigerante"></option>
+      <option value="Cerveja"></option>
+      <option value="Sobremesa"></option>
+      <option value="Café"></option>
+      <option value="Chá Gelado"></option>
+    </datalist>
+  </div>
+</body>
+</html>
